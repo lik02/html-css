@@ -1,0 +1,54 @@
+p {
+    font-family: Arial;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+input {
+    font-family: Arial;
+    font-size: 14px;
+    background-color: rgb(241, 240, 240);
+    border: none;
+    width: 300px;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.in-2 {
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: Arial;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.request-button {
+    color: white;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.schedule-button {
+    color: black;
+    background-color: rgb(241, 240, 240);
+}
