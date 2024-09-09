@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>13c</title>
+
+        <style>
+            .main {
+                margin: auto;
+                display: block;
+                width: 400px;
+                padding-top: 8px;
+                padding-bottom: 10px;
+                padding-left: 13px;
+                padding-right: 13px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+                margin-top: 50px;
+            }
+
+            p {
+                font-family: Arial;
+                margin: 0;
+            }
+
+            .inbox {
+                font-size: 14px;
+                color: grey;
+                margin-bottom: 18px;
+            }
+
+            .notifications {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                margin-right: 10px;
+            }
+
+            .content-flex {
+                flex: 1;
+            }
+
+            .title-flex {
+                display: flex;
+                flex-direction:row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .title {
+                font-size: 17px;
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+
+            .time {
+                color: grey;
+                font-size: 14px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 2px;
+            }
+
+            .description {
+                color: grey;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <p class="inbox">
+                ALL INBOXES
+            </p>
+            <div class="notifications">
+                <img src="images-1.jpeg">
+                <div class="content-flex">
+                    <div class="title-flex">
+                        <p class="title">
+                            Chewy Promotions
+                        </p>
+                        <p class="time">
+                            4 :58 PM
+                        </p>
+                    </div>
+                    <p class="subtitle">
+                        Biggest sales of the year!
+                    </p>
+                    <p class="description">
+                        Hey there! We're writting to tell you about our...
+                    </p>
+                </div>
+            </div>
+            
+            <div class="notifications">
+                <img src="images-2.jpeg">
+                <div class="content-flex">
+                    <div class="title-flex">
+                        <p class="title">
+                            Best Buy
+                        </p>
+                        <p class="time">
+                            12 :32 PM
+                        </p>
+                    </div>
+                    <p class="subtitle">
+                        Your Best Buy eReceipt
+                    </p>
+                    <p class="description">
+                        Thank you for shipping at Best Buy, here is...
+                    </p>
+                </div>
+            </div>
+
+            <div class="notifications">
+                <img src="images-1.jpeg">
+                <div class="content-flex">
+                    <div class="title-flex">
+                        <p class="title">
+                            Netflix
+                        </p>
+                        <p class="time">
+                            9 :00 AM
+                        </p>
+                    </div>
+                    <p class="subtitle">
+                        Here's what's coming soon to Netflix
+                    </p>
+                    <p class="description">
+                        Brand new movies and shows, old favourites...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
