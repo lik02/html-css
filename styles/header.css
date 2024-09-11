@@ -33,16 +33,13 @@
     height: 36.77px;
     padding-left: 10px;
     font-size: 16px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(192, 192, 192);
+    border: 1px solid rgb(192, 192, 192);
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     width: 0;
 }
 
 .search-bar::placeholder {
-    font-family: Roboto, Arial;
     font-size: 16px;
 }
 
@@ -57,9 +54,50 @@
     margin-right: 10px;
 }
 
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
+}
+
 .search-icon {
     height: 25px;
-    margin-top: 4px;
+    cursor: pointer;
 }
 
 .voice-search-button {
@@ -68,11 +106,11 @@
     border-radius: 20px;
     border: none;
     background-color: rgb(245, 245, 245);
+    cursor: pointer;
 }
 
 .voice-search-icon {
     height: 24px;
-    margin-top: 4px;
 }
 
 .right-section {
@@ -88,6 +126,7 @@
     height: 24px;
     margin-left: 24px;
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .youtube-logo {
@@ -96,18 +135,22 @@
 
 .upload-icon {
     height: 24px;
+    cursor: pointer;
 }
 
 .youtube-apps-icon {
     height: 24px;
+    cursor: pointer;
 }
 
 .notifications-icon {
     height: 24px;
+    cursor: pointer;
 }
 
 .notifications-icon-container {
     position: relative;
+    cursor: pointer;
 }
 
 .notifications-count {
@@ -116,7 +159,6 @@
     right: -3px;
     background-color: rgb(199, 0, 0);
     color: white;
-    font-family: Roboto, Arial;
     font-size: 11px;
     padding-left: 5px;
     padding-right: 5px;
@@ -128,4 +170,5 @@
 .current-user-picture {
     height: 32px;
     border-radius: 16px;
+    cursor: pointer;
 }
